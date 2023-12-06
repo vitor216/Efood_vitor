@@ -1,19 +1,14 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
-import Footer from './components/Footer'
-import Hero from './components/Hero'
-import Produto from './components/Produto'
 import { GlobalCss } from './styles'
+import Home from './Pages/Home'
+import Header from './components/Header'
+import Banner from './components/Banner'
 
 const rotas = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <>
-        <Hero />
-        <Produto />
-      </>
-    )
+    element: <Banner />
   }
 ])
 
@@ -23,7 +18,6 @@ function App() {
       <GlobalCss />
       <div className="container">
         <RouterProvider router={rotas} />
-        <Footer />
       </div>
     </>
   )

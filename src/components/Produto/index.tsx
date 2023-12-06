@@ -1,21 +1,46 @@
 import Nota from '../Nota'
 import Tag from '../Tag'
+import Button from '../Button'
 
-import { Texto, Titulo, Card } from './styles'
+import { Texto, Titulo, Card, Infos, Infos2, Container, Botao } from './styles'
+import * as S from './styles'
 
-const Produto = () => (
+type Props = {
+  title: string
+  nota: string
+  pais: string
+  description: string
+  destaque: string
+  image: string
+  botao: string
+}
+const Produto = ({
+  title,
+  nota,
+  pais,
+  description,
+  destaque,
+  image,
+  botao
+}: Props) => (
   <Card>
-    <img src="//placehold.it/472x217" />
-    <Titulo>Hioki Sushi</Titulo>
-    <Tag>Destaque da semana</Tag>
-    <Tag>Japonesa</Tag>
-    <Nota>4.9</Nota>
-    <Texto>
-      Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis
-      frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega
-      rápida, embalagens cuidadosas e qualidade garantida.Experimente o Japão
-      sem sair do lar com nosso delivery!
-    </Texto>
+    <S.img src={image} alt={title} />
+    <Container>
+      <Infos>
+        <Tag>{destaque}</Tag>
+        <Tag>{pais}</Tag>
+      </Infos>
+      <Titulo>{title}</Titulo>
+      <Infos2>
+        <Nota>{nota}</Nota>
+      </Infos2>
+      <Texto>{description}</Texto>
+      <Botao>
+        <Button type="link" to="/produto" title="clique aqui para saber mais">
+          {botao}
+        </Button>
+      </Botao>
+    </Container>
   </Card>
 )
 

@@ -22,16 +22,14 @@ export const Campo2 = styled.div`
   margin-top: 32.5px;
   margin-left: 460px;
 `
-export const Campo = styled.div`
-  max-width: 480px;
-  height: 24px;
-  margin-top: 80px;
-  margin-left: 250px;
-`
 export const Titulo = styled.h2`
   font-size: 10px;
   font-weight: 400;
   line-height: 11.72px;
   text-align: center;
   font-family: Roboto;
+  max-width: 480px;
+  height: 24px;
+  margin-top: 80px;
+  margin-left: 250px;
 `

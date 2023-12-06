@@ -1,4 +1,4 @@
-import { Container, Imglogo, Imgicone, Campo, Titulo, Campo2 } from './styles'
+import { Container, Imglogo, Imgicone, Titulo, Campo2 } from './styles'
 import logo from '../../assets/images/logo.svg'
 import facebook from '../../assets/images/facebook-round-svgrepo-com 1.svg'
 import twitter from '../../assets/images/twitter-2-svgrepo-com 1.svg'
@@ -12,13 +12,11 @@ const Footer = () => (
       <Imgicone src={twitter} />
       <Imgicone src={instagram} />
     </Campo2>
-    <Campo>
-      <Titulo>
-        A efood é uma plataforma para divulgação de estabelecimentos, a
-        responsabilidade pela entrega, qualidade dos produtos é toda do
-        estabelecimento contratado.
-      </Titulo>
-    </Campo>
+    <Titulo>
+      A efood é uma plataforma para divulgação de estabelecimentos, a
+      responsabilidade pela entrega, qualidade dos produtos é toda do
+      estabelecimento contratado.
+    </Titulo>
   </Container>
 )
 
