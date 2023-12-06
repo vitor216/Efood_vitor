@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Hedaer = styled.header`
-  max-width: 2031.81px;
+  width: 1366px;
   height: 186px;
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@ export const Hedaer = styled.header`
     color: ${cores.vermelho};
     text-decoration: none;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 193px;
     margin-top: -15px;
   }
 `
@@ -19,15 +19,15 @@ export const img = styled.img`
   width: 125px;
   height: 57.5px;
   margin-top: 39px;
-  margin-left: 250px;
+  margin-left: 341px;
   margin-bottom: 64.5px;
 `
 export const Campo = styled.div`
   max-width: 109px;
   height: 21px;
   margin-top: 58px;
-  margin-left: 100px;
-  margin-bottom: 82px;
+  margin-left: 171px;
+  margin-bottom: 83px;
 `
 export const Titulo = styled.h1`
   font-size: 18px;

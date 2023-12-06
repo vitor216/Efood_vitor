@@ -9,13 +9,13 @@ export const img = styled.img`
   width: 125px;
   height: 57.5px;
   margin-top: 40px;
-  margin-left: 450px;
+  margin-left: 621px;
 `
 export const Campo = styled.div`
   max-width: 539px;
   height: 84px;
-  margin-top: 150px;
-  margin-left: 250px;
+  margin-top: 138.5px;
+  margin-left: 414px;
 `
 export const Titulo = styled.h1`
   font-size: 36px;

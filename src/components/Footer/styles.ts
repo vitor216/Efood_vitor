@@ -10,7 +10,7 @@ export const Imglogo = styled.img`
   width: 125px;
   height: 57.5px;
   margin-top: 40px;
-  margin-left: 450px;
+  margin-left: 621px;
 `
 export const Imgicone = styled.img`
   width: 24px;
@@ -20,7 +20,7 @@ export const Imgicone = styled.img`
 export const Campo2 = styled.div`
   max-width: 125px;
   margin-top: 32.5px;
-  margin-left: 460px;
+  margin-left: 632px;
 `
 export const Titulo = styled.h2`
   font-size: 10px;
@@ -31,5 +31,5 @@ export const Titulo = styled.h2`
   max-width: 480px;
   height: 24px;
   margin-top: 80px;
-  margin-left: 250px;
+  margin-left: 444px;
 `

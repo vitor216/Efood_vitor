@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 export const cores = {
   branca: '#EEEEEE',
@@ -22,8 +22,7 @@ export const GlobalCss = createGlobalStyle`
   }
 
   .container {
-    max-width: 1024px;
-    width: 100%;
+    max-width: 1366px;
     margin: 0 auto;
   }
   `
