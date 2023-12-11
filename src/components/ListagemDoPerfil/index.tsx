@@ -15,7 +15,6 @@ const ListagemDoPerfil = ({ produtos2 }: Props) => (
           title={produto2.title}
           description={produto2.description}
           image={produto2.image}
-          botao={produto2.botao}
         />
       ))}
     </List>

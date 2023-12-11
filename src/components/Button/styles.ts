@@ -2,15 +2,19 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 import { Link } from 'react-router-dom'
 
-export const ButtonContainer = styled.button`
-  width: 295px;
+import { Props } from '.'
+
+export const ButtonContainer = styled.button<Props>`
+  width: ${(props) => (props.variant === 'primary' ? '82px' : '304px')};
   height: 24px;
-  background-color: ${cores.amarelo};
-  color: ${cores.vermelho};
+  background-color: ${(props) =>
+    props.variant === 'primary' ? cores.vermelho : cores.amarelo};
+  color: ${(props) =>
+    props.variant === 'primary' ? cores.amarelo : cores.vermelho};
   font-size: 14px;
   font-weight: bold;
   font-family: Roboto;
-  padding: 4px 6px;
+  padding: 6px 4px;
   border: none;
 `
 export const ButtonLink = styled(Link)`

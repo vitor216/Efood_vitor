@@ -14,11 +14,9 @@ const Listagem = ({ produtos }: Props) => (
           key={produto.id}
           title={produto.title}
           nota={produto.nota}
-          pais={produto.pais}
+          informacao={produto.informacao}
           description={produto.description}
-          destaque={produto.destaque}
           image={produto.image}
-          botao={produto.botao}
         />
       ))}
     </List>

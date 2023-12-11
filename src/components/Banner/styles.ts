@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Imagem = styled.div`
-  width: 100%;
+  width: 1366px;
   height: 280px;
   background-repeat: no-repeat;
   background-size: cover;

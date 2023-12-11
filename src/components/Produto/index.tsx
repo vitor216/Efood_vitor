@@ -8,27 +8,18 @@ import * as S from './styles'
 type Props = {
   title: string
   nota: string
-  pais: string
+  informacao: string[]
   description: string
-  destaque: string
   image: string
-  botao: string
 }
-const Produto = ({
-  title,
-  nota,
-  pais,
-  description,
-  destaque,
-  image,
-  botao
-}: Props) => (
+const Produto = ({ title, nota, informacao, description, image }: Props) => (
   <Card>
     <S.img src={image} alt={title} />
     <Container>
       <Infos>
-        <Tag>{destaque}</Tag>
-        <Tag>{pais}</Tag>
+        {informacao.map((info) => (
+          <Tag key={info}>{info}</Tag>
+        ))}
       </Infos>
       <Titulo>{title}</Titulo>
       <Infos2>
@@ -36,8 +27,12 @@ const Produto = ({
       </Infos2>
       <Texto>{description}</Texto>
       <Botao>
-        <Button type="link" to="/produto" title="clique aqui para saber mais">
-          {botao}
+        <Button
+          variant="primary"
+          type="button"
+          title="clique aqui para saber mais"
+        >
+          Saiba Mais
         </Button>
       </Botao>
     </Container>

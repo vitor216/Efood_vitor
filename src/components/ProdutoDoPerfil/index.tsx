@@ -7,19 +7,19 @@ type Props = {
   title: string
   description: string
   image: string
-  botao: string
 }
-const ProdutoDoPerfil = ({ title, description, image, botao }: Props) => (
+const ProdutoDoPerfil = ({ title, description, image }: Props) => (
   <Card>
     <S.img src={image} alt={title} />
     <Titulo>{title}</Titulo>
     <Texto>{description}</Texto>
     <Botao>
       <Button
+        variant="secondary"
         type="button"
         title="clique aqui para adicionar o produto ao carrinho"
       >
-        {botao}
+        Adicionar ao Carrinho
       </Button>
     </Botao>
   </Card>

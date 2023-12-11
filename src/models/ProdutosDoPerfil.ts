@@ -2,7 +2,6 @@ class ProdutosDoPerfil {
   title: string
   description: string
   image: string
-  botao: string
   id: number
 
   constructor(
@@ -15,7 +14,6 @@ class ProdutosDoPerfil {
     this.title = title
     this.description = description
     this.image = image
-    this.botao = botao
     this.id = id
   }
 }
