@@ -17,9 +17,9 @@ const ProdutoDoPerfil = ({ title, description, image }: Props) => (
       <Button
         variant="secondary"
         type="button"
-        title="clique aqui para adicionar o produto ao carrinho"
+        title="clique aqui para saber mais detalhes"
       >
-        Adicionar ao Carrinho
+        Mais detalhes
       </Button>
     </Botao>
   </Card>

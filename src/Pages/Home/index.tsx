@@ -30,38 +30,38 @@ const produto: Produtos[] = [
     id: 2
   },
   {
-    title: 'Tapas españolas',
+    title: 'Oro Bianco',
     nota: '5.0',
-    informacao: ['Espanha'],
+    informacao: ['Espanhola'],
     description:
-      'Esse prato conta com uma infinidade de variações e é basicamente composto por porções de diversas comidas. Entre as mais populares estão as patatas bravas, que consistem em batatas fritas com molho picante, presunto cru, queijos e polvo.',
+      'Peça já o melhor da culinária Espanhola no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária Espanhola sem sair do lar com nosso delivery!',
     image: ComidaEspanhola,
     id: 3
   },
   {
-    title: 'Polvo com arroz negro',
+    title: 'Silversmiths Restaurant',
     nota: '4.3',
-    informacao: ['Inglrsa'],
+    informacao: ['Inglesa'],
     description:
-      'Em uma panela, coloque o azeite e doure a cebola. Adicione a cenoura, o pimentão, o alho-poró, o salsão, os tomates-cereja, o gengibre, os dentes de alho, as folhas de louro e o tomilho. Coloque os tentáculos de polvo, mexa e cubra com água',
+      'Peça já o melhor da culinária inglesa no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária inglesa sem sair do lar com nosso delivery!',
     image: ComidaInglesa,
     id: 4
   },
   {
-    title: 'Boeuf bourguignon',
+    title: 'Le Gabriel',
     nota: '5.0',
     informacao: ['Francesa'],
     description:
-      'Está é uma receita de comida francesa clássica, servida em diferentes restaurantes renomados em Paris. Para te auxiliar no preparo, separamos um vídeo da Tastemade Brasil.',
+      'Peça já o melhor da culinária Francesa no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária Francesa sem sair do lar com nosso delivery!',
     image: ComidaFrancesa,
     id: 5
   },
   {
-    title: 'Quiche lorraine',
+    title: 'Arca Amsterdam',
     nota: '4.2',
     informacao: ['Holandesa'],
     description:
-      'O quiche lorraine é mais uma das receitas clássicas francesas e pode ser preparada com facilidade e rapidamente. Para te auxiliar no preparo, separamos um vídeo do canal Receitas de Minuto. Confira!',
+      'Peça já o melhor da culinária Holandesa no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária Holandesa sem sair do lar com nosso delivery!',
     image: ComidaHolandesa,
     id: 6
   }
