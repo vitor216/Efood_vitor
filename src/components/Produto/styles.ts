@@ -35,13 +35,16 @@ export const Texto = styled.p`
   font-weight: 400;
   line-height: 22px;
   display: block;
-  margin-top: 16px;
-  margin-left: 8px;
+  margin-top: 13px;
+  margin-left: 7px;
+`
+export const Campo = styled.div`
+  width: 464px;
 `
 export const Infos = styled.div`
   position: absolute;
   top: 16px;
-  right: 16px;
+  right: 8px;
 `
 export const Infos2 = styled.div`
   display: flex;

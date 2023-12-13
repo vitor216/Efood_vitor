@@ -26,7 +26,9 @@ const Produto = ({ title, nota, informacao, description, image }: Props) => (
       <S.Infos2>
         <Nota>{nota}</Nota>
       </S.Infos2>
-      <S.Texto>{description}</S.Texto>
+      <S.Campo>
+        <S.Texto>{description}</S.Texto>
+      </S.Campo>
       <S.Botao>
         <Button
           variant="primary"

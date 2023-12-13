@@ -28,7 +28,7 @@ export const Titulo1 = styled.h2`
   font-weight: 100;
   color: #ffffff;
   padding-top: 25px;
-  margin-left: 170px;
+  margin-left: 440px;
 `
 export const Titulo2 = styled.h2`
   font-family: Roboto;
@@ -36,5 +36,5 @@ export const Titulo2 = styled.h2`
   font-weight: 900;
   color: #ffffff;
   padding-top: 156.5px;
-  margin-left: 170px;
+  margin-left: 440px;
 `

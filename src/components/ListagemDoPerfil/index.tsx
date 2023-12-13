@@ -1,7 +1,7 @@
 import ProdutosDoPerfilM from '../../models/ProdutosDoPerfil'
 import ProdutosDoPerfil from '../ProdutoDoPerfil'
 import * as S from './styles'
-import Pizza from '../../assets/images/Pizza.svg'
+import Pizza from '../../assets/images/Banner.svg'
 import Fechar from '../../assets/images/close.png'
 export type Props = {
   produtos2: ProdutosDoPerfilM[]

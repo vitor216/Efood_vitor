@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
 export const Imagem = styled.div`
   width: 100%;
   height: 354px;
@@ -15,8 +20,8 @@ export const img = styled.img`
 `
 export const Campo = styled.div`
   max-width: 539px;
-  height: 84px;
-  margin-top: 138.5px;
+  height: 79px;
+  margin-top: 134px;
   margin-left: 700px;
 `
 export const Titulo = styled.h1`
