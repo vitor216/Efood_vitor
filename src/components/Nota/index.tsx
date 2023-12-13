@@ -1,4 +1,4 @@
-import { Notas, ImgEstrela } from './styles'
+import * as S from './styles'
 import estrela from '../../assets/images/estrela.svg'
 
 export type Props = {
@@ -7,10 +7,10 @@ export type Props = {
 
 const Nota = ({ children }: Props) => (
   <>
-    <Notas>{children}</Notas>
-    <ImgEstrela>
+    <S.Notas>{children}</S.Notas>
+    <S.ImgEstrela>
       <img src={estrela} />
-    </ImgEstrela>
+    </S.ImgEstrela>
   </>
 )
 

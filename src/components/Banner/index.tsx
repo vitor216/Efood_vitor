@@ -1,14 +1,16 @@
-import { Imagem, Titulo1, Titulo2 } from './styles'
+import * as S from './styles'
 
 import bannerImg from '../../assets/images/Banner.svg'
 
 const Banner = () => (
-  <Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
+  <S.Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
     <div className="container">
-      <Titulo1>Italiana</Titulo1>
-      <Titulo2>La Dolce Vita Trattoria</Titulo2>
+      <div>
+        <S.Titulo1>Italiana</S.Titulo1>
+        <S.Titulo2>La Dolce Vita Trattoria</S.Titulo2>
+      </div>
     </div>
-  </Imagem>
+  </S.Imagem>
 )
 
 export default Banner

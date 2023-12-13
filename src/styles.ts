@@ -18,11 +18,12 @@ export const GlobalCss = createGlobalStyle`
   body {
     background-color: ${cores.branca};
     color: ${cores.vermelho};
-    padding-top: 24px;
   }
 
   .container {
-    max-width: 1366px;
-    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0, auto;
+
   }
   `

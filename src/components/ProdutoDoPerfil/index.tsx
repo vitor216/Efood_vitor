@@ -1,6 +1,5 @@
 import Button from '../Button'
 
-import { Texto, Titulo, Card, Botao } from './styles'
 import * as S from './styles'
 
 type Props = {
@@ -9,11 +8,11 @@ type Props = {
   image: string
 }
 const ProdutoDoPerfil = ({ title, description, image }: Props) => (
-  <Card>
+  <S.Card>
     <S.img src={image} alt={title} />
-    <Titulo>{title}</Titulo>
-    <Texto>{description}</Texto>
-    <Botao>
+    <S.Titulo>{title}</S.Titulo>
+    <S.Texto>{description}</S.Texto>
+    <S.Botao>
       <Button
         variant="secondary"
         type="button"
@@ -21,8 +20,8 @@ const ProdutoDoPerfil = ({ title, description, image }: Props) => (
       >
         Mais detalhes
       </Button>
-    </Botao>
-  </Card>
+    </S.Botao>
+  </S.Card>
 )
 
 export default ProdutoDoPerfil

@@ -14,8 +14,8 @@ export const ButtonContainer = styled.button<Props>`
   font-size: 14px;
   font-weight: bold;
   font-family: Roboto;
-  padding: 6px 4px;
   border: none;
+  text-align: center;
 `
 export const ButtonLink = styled(Link)`
   width: 82px;
@@ -24,7 +24,7 @@ export const ButtonLink = styled(Link)`
   color: ${cores.amarelo};
   font-size: 14px;
   font-weight: 700;
-  font-family: roboto;
+  font-family: Roboto;
   padding: 6px 4px;
   text-decoration: none;
   text-align: center;

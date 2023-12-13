@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  max-width: 1366px;
+  width: 100%;
   height: 298px;
-  margin-top: 10px;
   background-color: #ffebd9;
+  margin-top: 120px;
 `
 export const Imglogo = styled.img`
   width: 125px;
   height: 57.5px;
   margin-top: 40px;
-  margin-left: 621px;
+  margin-left: 900px;
 `
 export const Imgicone = styled.img`
   width: 24px;
@@ -20,7 +20,7 @@ export const Imgicone = styled.img`
 export const Campo2 = styled.div`
   max-width: 125px;
   margin-top: 32.5px;
-  margin-left: 632px;
+  margin-left: 910px;
 `
 export const Titulo = styled.h2`
   font-size: 10px;
@@ -31,5 +31,5 @@ export const Titulo = styled.h2`
   max-width: 480px;
   height: 24px;
   margin-top: 80px;
-  margin-left: 444px;
+  margin-left: 722px;
 `

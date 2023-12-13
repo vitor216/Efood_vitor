@@ -2,7 +2,6 @@ import Nota from '../Nota'
 import Tag from '../Tag'
 import Button from '../Button'
 
-import { Texto, Titulo, Card, Infos, Infos2, Container, Botao } from './styles'
 import * as S from './styles'
 
 type Props = {
@@ -13,20 +12,22 @@ type Props = {
   image: string
 }
 const Produto = ({ title, nota, informacao, description, image }: Props) => (
-  <Card>
+  <S.Card>
     <S.img src={image} alt={title} />
-    <Container>
-      <Infos>
+    <S.Container>
+      <S.Infos>
         {informacao.map((info) => (
-          <Tag key={info}>{info}</Tag>
+          <Tag size="small" key={info}>
+            {info}
+          </Tag>
         ))}
-      </Infos>
-      <Titulo>{title}</Titulo>
-      <Infos2>
+      </S.Infos>
+      <S.Titulo>{title}</S.Titulo>
+      <S.Infos2>
         <Nota>{nota}</Nota>
-      </Infos2>
-      <Texto>{description}</Texto>
-      <Botao>
+      </S.Infos2>
+      <S.Texto>{description}</S.Texto>
+      <S.Botao>
         <Button
           variant="primary"
           type="button"
@@ -34,9 +35,9 @@ const Produto = ({ title, nota, informacao, description, image }: Props) => (
         >
           Saiba Mais
         </Button>
-      </Botao>
-    </Container>
-  </Card>
+      </S.Botao>
+    </S.Container>
+  </S.Card>
 )
 
 export default Produto

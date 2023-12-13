@@ -5,7 +5,6 @@ import { TagContainer } from '../Tag/styles'
 export const Card = styled.div`
   background-color: ${cores.branca};
   position: relative;
-  margin-bottom: 48px;
 
   ${TagContainer} {
     margin-right: 8px;
@@ -25,6 +24,7 @@ export const Titulo = styled.h3`
   font-family: Roboto;
   font-size: 18px;
   font-weight: 700;
+  line-height: 21.09px;
   margin-top: 8px;
   margin-left: 7px;
 `

@@ -2,16 +2,18 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const Hedaer = styled.header`
-  width: 1366px;
+  width: 100%;
   height: 186px;
   display: flex;
   align-items: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
   a {
     color: ${cores.vermelho};
     text-decoration: none;
     font-weight: bold;
-    margin-left: 193px;
+    margin-left: 620px;
     margin-top: -15px;
   }
 `
@@ -19,7 +21,7 @@ export const img = styled.img`
   width: 125px;
   height: 57.5px;
   margin-top: 39px;
-  margin-left: 341px;
+  margin-left: 541px;
   margin-bottom: 64.5px;
 `
 export const Campo = styled.div`

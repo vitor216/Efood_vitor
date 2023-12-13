@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Imagem = styled.div`
-  width: 1366px;
+  width: 100%;
   height: 280px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,7 +23,7 @@ export const Imagem = styled.div`
   }
 `
 export const Titulo1 = styled.h2`
-  font-family: roboto;
+  font-family: Roboto;
   font-size: 32px;
   font-weight: 100;
   color: #ffffff;
@@ -31,7 +31,7 @@ export const Titulo1 = styled.h2`
   margin-left: 170px;
 `
 export const Titulo2 = styled.h2`
-  font-family: roboto;
+  font-family: Roboto;
   font-size: 32px;
   font-weight: 900;
   color: #ffffff;

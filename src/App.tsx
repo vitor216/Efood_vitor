@@ -7,9 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <GlobalCss />
-      <div className="container">
-        <Rotas />
-      </div>
+      <Rotas />
     </BrowserRouter>
   )
 }

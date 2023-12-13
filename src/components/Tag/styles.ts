@@ -9,6 +9,7 @@ export const TagContainer = styled.div<Props>`
   font-size: ${(props) =>
     props.size === 'small' ? '12' : props.size === 'big' ? '24' : '18'};
   font-weight: 700;
+  line-height: 14.06px;
   padding: ${(props) =>
     props.size === 'small'
       ? '4px 6px'

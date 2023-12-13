@@ -3,7 +3,6 @@ import { cores } from '../../styles'
 
 export const Card = styled.div`
   background-color: ${cores.vermelho};
-  margin-bottom: 40px;
   padding: 8px;
 `
 export const img = styled.img`
@@ -17,7 +16,6 @@ export const Titulo = styled.h3`
   font-size: 16px;
   font-weight: bold;
   margin-top: 8px;
-  margin-left: 8px;
 `
 export const Texto = styled.p`
   color: ${cores.amarelo};
@@ -26,9 +24,7 @@ export const Texto = styled.p`
   font-weight: normal;
   display: block;
   margin-top: 8px;
-  margin-left: 8px;
 `
 export const Botao = styled.div`
   margin-top: 8px;
-  margin-left: 8px;
 `
