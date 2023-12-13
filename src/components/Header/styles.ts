@@ -4,9 +4,6 @@ import { cores } from '../../styles'
 export const Hedaer = styled.header`
   width: 100%;
   height: 186px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
 
