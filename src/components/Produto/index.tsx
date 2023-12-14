@@ -34,6 +34,7 @@ const Produto = ({ title, nota, informacao, description, image }: Props) => (
           variant="primary"
           type="button"
           title="clique aqui para saber mais"
+          size="small"
         >
           Saiba Mais
         </Button>

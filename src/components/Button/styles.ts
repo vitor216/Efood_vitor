@@ -11,7 +11,8 @@ export const ButtonContainer = styled.button<Props>`
     props.variant === 'primary' ? cores.vermelho : cores.amarelo};
   color: ${(props) =>
     props.variant === 'primary' ? cores.amarelo : cores.vermelho};
-  font-size: 14px;
+  font-size: ${(props) =>
+    props.size === 'small' ? '14px' : props.size === 'big' ? '24px' : '18px'};
   font-weight: bold;
   font-family: Roboto;
   border: none;

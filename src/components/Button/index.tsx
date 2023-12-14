@@ -1,6 +1,7 @@
 import * as S from './styles'
 
 export type Props = {
+  size?: 'small' | 'medium' | 'big'
   type: 'button' | 'link'
   title: string
   to?: string
@@ -15,7 +16,8 @@ const Button = ({
   to,
   onClick,
   children,
-  variant = 'primary'
+  variant = 'primary',
+  size = 'small'
 }: Props) => {
   if (type === 'button') {
     return (
@@ -24,6 +26,7 @@ const Button = ({
         type="button"
         title={title}
         onClick={onClick}
+        size={size}
       >
         {children}
       </S.ButtonContainer>

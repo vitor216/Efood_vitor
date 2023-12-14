@@ -7,7 +7,7 @@ export const TagContainer = styled.div<Props>`
   background-color: ${cores.vermelho};
   color: ${cores.amarelo};
   font-size: ${(props) =>
-    props.size === 'small' ? '12' : props.size === 'big' ? '24' : '18'};
+    props.size === 'small' ? '12px' : props.size === 'big' ? '24px' : '18px'};
   font-weight: 700;
   line-height: 14.06px;
   padding: ${(props) =>
