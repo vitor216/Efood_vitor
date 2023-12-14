@@ -4,7 +4,7 @@ import ListagemDoPerfil from '../../components/ListagemDoPerfil'
 import ProdutosDoPerfil from '../../models/ProdutosDoPerfil'
 
 import Quiche from '../../assets/images/restaurante6-holanda.jpg'
-import Banner from '../../components/Banner'
+import Banner6 from '../../components/Banner6'
 
 const produto2: ProdutosDoPerfil[] = [
   {
@@ -54,7 +54,7 @@ const produto2: ProdutosDoPerfil[] = [
 const Perfil = () => (
   <>
     <Header />
-    <Banner />
+    <Banner6 />
     <ListagemDoPerfil produtos2={produto2} />
     <Footer />
   </>

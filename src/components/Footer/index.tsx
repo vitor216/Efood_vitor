@@ -6,17 +6,19 @@ import instagram from '../../assets/images/instagram-round-svgrepo-com (1) 1.svg
 
 const Footer = () => (
   <S.Container>
-    <S.Imglogo src={logo} />
-    <S.Campo2>
-      <S.Imgicone src={facebook} />
-      <S.Imgicone src={twitter} />
-      <S.Imgicone src={instagram} />
-    </S.Campo2>
-    <S.Titulo>
-      A efood é uma plataforma para divulgação de estabelecimentos, a
-      responsabilidade pela entrega, qualidade dos produtos é toda do
-      estabelecimento contratado.
-    </S.Titulo>
+    <S.Campo>
+      <S.Imglogo src={logo} />
+      <S.Campo2>
+        <S.Imgicone src={facebook} />
+        <S.Imgicone src={twitter} />
+        <S.Imgicone src={instagram} />
+      </S.Campo2>
+      <S.Titulo>
+        A efood é uma plataforma para divulgação de estabelecimentos, a
+        responsabilidade pela entrega, qualidade dos produtos é toda do
+        estabelecimento contratado.
+      </S.Titulo>
+    </S.Campo>
   </S.Container>
 )
 

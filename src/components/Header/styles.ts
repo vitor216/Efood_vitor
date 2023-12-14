@@ -6,6 +6,7 @@ export const Hedaer = styled.header`
   height: 186px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -13,23 +14,21 @@ export const Hedaer = styled.header`
     color: ${cores.vermelho};
     text-decoration: none;
     font-weight: bold;
-    margin-top: -54px;
-    margin-left: 250px;
   }
+`
+export const Container = styled.div`
+  width: 1024px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `
 export const img = styled.img`
   width: 125px;
   height: 57.5px;
-  margin-top: 18px;
-  margin-bottom: 64.5px;
-  margin-left: 360px;
 `
 export const Campo = styled.div`
   max-width: 109px;
   height: 21px;
-  margin-top: 34px;
-  margin-left: 440px;
-  margin-bottom: 83px;
 `
 export const Titulo = styled.h1`
   font-size: 18px;
