@@ -1,11 +1,11 @@
 import * as S from './styles'
-import bannerImg from '../../assets/images/restaurante6-holanda.jpg'
+import bannerImg from '../../../assets/images/restaurante3-espanha.png'
 
 const Banner = () => (
   <S.Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
     <S.Container>
-      <S.Titulo1>Holandesa</S.Titulo1>
-      <S.Titulo2>Arca Amsterdam</S.Titulo2>
+      <S.Titulo1>Espanhola</S.Titulo1>
+      <S.Titulo2>Oro Bianco</S.Titulo2>
     </S.Container>
   </S.Imagem>
 )

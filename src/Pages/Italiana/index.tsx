@@ -3,8 +3,8 @@ import Header from '../../components/Header'
 import ListagemDoPerfil from '../../components/ListagemDoPerfil'
 import ProdutosDoPerfil from '../../models/ProdutosDoPerfil'
 
-import Pizza from '../../assets/images/Pizza.svg'
-import Banner from '../../components/Banner'
+import Pizza from '../../assets/images/Pizza.png'
+import Banner from '../../components/Banners/Banner'
 
 const produto2: ProdutosDoPerfil[] = [
   {

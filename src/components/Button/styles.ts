@@ -17,6 +17,7 @@ export const ButtonContainer = styled.button<Props>`
   font-family: Roboto;
   border: none;
   text-align: center;
+  cursor: pointer;
 `
 export const ButtonLink = styled(Link)`
   width: 82px;

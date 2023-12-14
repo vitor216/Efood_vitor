@@ -4,7 +4,7 @@ import ListagemDoPerfil from '../../components/ListagemDoPerfil'
 import ProdutosDoPerfil from '../../models/ProdutosDoPerfil'
 
 import Boeuf from '../../assets/images/restaurante5-frança.jpg'
-import Banner5 from '../../components/Banner5'
+import Banner5 from '../../components/Banners/Banner5'
 
 const produto2: ProdutosDoPerfil[] = [
   {
