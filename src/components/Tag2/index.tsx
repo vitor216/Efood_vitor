@@ -2,7 +2,7 @@ import * as S from './styles'
 
 export type Props = {
   size?: 'small' | 'medium' | 'big'
-  children: boolean
+  children: string
 }
 
 const Tag = ({ children, size = 'small' }: Props) => (

@@ -1,33 +1,39 @@
 import Nota from '../Nota'
 import Tag from '../Tag'
+import Tag2 from '../Tag2'
 import Button from '../Button'
 
 import * as S from './styles'
 
 type Props = {
-  title: string
-  nota: string
-  informacao: string[]
-  description: string
-  image: string
+  titulo: string
+  avaliacao: number
+  destacado: boolean
+  tipo: string
+  descricao: string
+  capa: string
 }
-const Produto = ({ title, nota, informacao, description, image }: Props) => (
+const Produto = ({
+  titulo,
+  avaliacao,
+  destacado,
+  tipo,
+  descricao,
+  capa
+}: Props) => (
   <S.Card>
-    <S.img src={image} alt={title} />
+    <S.img src={capa} alt={titulo} />
     <S.Container>
       <S.Infos>
-        {informacao.map((info) => (
-          <Tag size="small" key={info}>
-            {info}
-          </Tag>
-        ))}
+        <Tag>{destacado}</Tag>
+        <Tag2>{tipo}</Tag2>
       </S.Infos>
-      <S.Titulo>{title}</S.Titulo>
+      <S.Titulo>{titulo}</S.Titulo>
       <S.Infos2>
-        <Nota>{nota}</Nota>
+        <Nota>{avaliacao}</Nota>
       </S.Infos2>
       <S.Campo>
-        <S.Texto>{description}</S.Texto>
+        <S.Texto>{descricao}</S.Texto>
       </S.Campo>
       <S.Botao>
         <Button

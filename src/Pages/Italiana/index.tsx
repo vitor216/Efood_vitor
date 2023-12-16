@@ -1,12 +1,12 @@
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
-import ListagemDoPerfil from '../../components/ListagemDoPerfil'
-import ProdutosDoPerfil from '../../models/ProdutosDoPerfil'
+import ListagemDoCardapio from '../../components/ListagemDoCardapio'
+import Cardapio from '../../models/Cardapio'
 
 import Pizza from '../../assets/images/Pizza.png'
 import Banner from '../../components/Banners/Banner'
 
-const produto2: ProdutosDoPerfil[] = [
+const cardapio: Cardapio[] = [
   {
     title: 'Pizza Marguerita',
     description:
@@ -55,7 +55,7 @@ const Perfil = () => (
   <>
     <Header />
     <Banner />
-    <ListagemDoPerfil produtos2={produto2} />
+    <ListagemDoCardapio cardapio={cardapio} />
     <Footer />
   </>
 )

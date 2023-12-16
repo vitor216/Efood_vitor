@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Props } from '.'
 import { cores } from '../../styles'
 
-export const Container = styled.section<Omit<Props, 'produtos2'>>`
+export const Container = styled.section<Omit<Props, 'cardapio'>>`
   backgrond-color: ${cores.vermelho};
   display: flex;
   align-items: center;

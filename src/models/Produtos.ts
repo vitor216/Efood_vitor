@@ -1,24 +1,27 @@
 class Produtos {
-  title: string
-  nota: string
-  informacao: string[]
-  description: string
-  image: string
+  titulo: string
+  destacado: boolean
+  tipo: string
+  avaliacao: number
+  descricao: string
+  capa: string
   id: number
 
   constructor(
-    title: string,
-    nota: string,
-    informacao: string[],
-    description: string,
-    image: string,
+    titulo: string,
+    destacado: boolean,
+    tipo: string,
+    avaliacao: number,
+    descricao: string,
+    capa: string,
     id: number
   ) {
-    this.title = title
-    this.nota = nota
-    this.informacao = informacao
-    this.description = description
-    this.image = image
+    this.titulo = titulo
+    this.destacado = destacado
+    this.tipo = tipo
+    this.avaliacao = avaliacao
+    this.descricao = descricao
+    this.capa = capa
     this.id = id
   }
 }

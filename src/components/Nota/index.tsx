@@ -2,7 +2,7 @@ import * as S from './styles'
 import estrela from '../../assets/images/estrela.svg'
 
 export type Props = {
-  children: string
+  children: number
 }
 
 const Nota = ({ children }: Props) => (

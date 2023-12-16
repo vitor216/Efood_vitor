@@ -13,11 +13,12 @@ const Listagem = ({ produtos }: Props) => (
         {produtos.map((produto) => (
           <Produto
             key={produto.id}
-            title={produto.title}
-            nota={produto.nota}
-            informacao={produto.informacao}
-            description={produto.description}
-            image={produto.image}
+            titulo={produto.titulo}
+            avaliacao={produto.avaliacao}
+            destacado={produto.destacado}
+            tipo={produto.tipo}
+            descricao={produto.descricao}
+            capa={produto.capa}
           />
         ))}
       </S.List>
