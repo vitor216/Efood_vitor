@@ -1,13 +1,24 @@
 class ProdutosDoPerfil {
-  title: string
-  description: string
-  image: string
+  nome: string
+  descricao: string
+  preco: number
+  porcao: string
+  foto: string
   id: number
 
-  constructor(title: string, description: string, image: string, id: number) {
-    this.title = title
-    this.description = description
-    this.image = image
+  constructor(
+    nome: string,
+    descricao: string,
+    foto: string,
+    id: number,
+    preco: number,
+    porcao: string
+  ) {
+    this.nome = nome
+    this.descricao = descricao
+    this.foto = foto
+    this.preco = preco
+    this.porcao = porcao
     this.id = id
   }
 }

@@ -8,46 +8,58 @@ import Banner from '../../components/Banners/Banner'
 
 const cardapio: Cardapio[] = [
   {
-    title: 'Pizza Marguerita',
-    description:
+    nome: 'Pizza Marguerita',
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    image: Pizza,
-    id: 1
+    foto: Pizza,
+    id: 1,
+    preco: 69.9,
+    porcao: 'de 2 a 3 Pessoas'
   },
   {
-    title: 'Pizza Marguerita',
-    description:
+    nome: 'Pizza Marguerita',
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    image: Pizza,
-    id: 2
+    foto: Pizza,
+    id: 2,
+    preco: 69.9,
+    porcao: 'de 2 a 3 Pessoas'
   },
   {
-    title: 'Pizza Marguerita',
-    description:
+    nome: 'Pizza Marguerita',
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    image: Pizza,
-    id: 3
+    foto: Pizza,
+    id: 3,
+    preco: 69.9,
+    porcao: 'de 2 a 3 Pessoas'
   },
   {
-    title: 'Pizza Marguerita',
-    description:
+    nome: 'Pizza Marguerita',
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    image: Pizza,
-    id: 4
+    foto: Pizza,
+    id: 4,
+    preco: 69.9,
+    porcao: 'de 2 a 3 Pessoas'
   },
   {
-    title: 'Pizza Marguerita',
-    description:
+    nome: 'Pizza Marguerita',
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    image: Pizza,
-    id: 5
+    foto: Pizza,
+    id: 5,
+    preco: 69.9,
+    porcao: 'de 2 a 3 Pessoas'
   },
   {
-    title: 'Pizza Marguerita',
-    description:
+    nome: 'Pizza Marguerita',
+    descricao:
       'A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!',
-    image: Pizza,
-    id: 6
+    foto: Pizza,
+    id: 6,
+    preco: 69.9,
+    porcao: 'de 2 a 3 Pessoas'
   }
 ]
 

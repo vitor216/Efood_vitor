@@ -5,19 +5,21 @@ import { useState } from 'react'
 import * as S from './styles'
 
 type Props = {
-  title: string
-  description: string
-  image: string
+  nome: string
+  descricao: string
+  preco: number
+  porcao: string
+  foto: string
 }
-const ProdutoDoPerfil = ({ title, description, image }: Props) => {
+const ProdutoDoPerfil = ({ nome, descricao, foto }: Props) => {
   const [ModalEstaAberto, setModalEstaAberto] = useState(false)
   const [ModalImage, setModalImage] = useState('')
 
   return (
     <S.Card>
-      <S.img src={image} alt={title} />
-      <S.Titulo>{title}</S.Titulo>
-      <S.Texto>{description}</S.Texto>
+      <S.img src={foto} alt={nome} />
+      <S.Titulo>{nome}</S.Titulo>
+      <S.Texto>{descricao}</S.Texto>
       <S.Botao>
         <Button
           variant="secondary"
@@ -25,7 +27,7 @@ const ProdutoDoPerfil = ({ title, description, image }: Props) => {
           title="clique aqui para saber mais detalhes"
           onClick={() => {
             setModalEstaAberto(true)
-            setModalImage(image)
+            setModalImage(foto)
           }}
         >
           Adicinar ao Carrinho
@@ -41,7 +43,7 @@ const ProdutoDoPerfil = ({ title, description, image }: Props) => {
           <S.Modall>
             <img src={ModalImage} />
             <S.Campo>
-              <S.Titulo2>{title}</S.Titulo2>
+              <S.Titulo2>{nome}</S.Titulo2>
               <S.Description>
                 A pizza Margherita é uma pizza clássica da culinária italiana,
                 reconhecida por sua simplicidade e sabor inigualável. Ela é

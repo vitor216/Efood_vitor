@@ -14,9 +14,11 @@ const ListagemDoCardapio = ({ cardapio }: Props) => {
           {cardapio.map((cardapio) => (
             <ProdutosDoPerfil
               key={cardapio.id}
-              title={cardapio.title}
-              description={cardapio.description}
-              image={cardapio.image}
+              nome={cardapio.nome}
+              descricao={cardapio.descricao}
+              foto={cardapio.foto}
+              preco={cardapio.preco}
+              porcao={cardapio.porcao}
             />
           ))}
         </S.List>
