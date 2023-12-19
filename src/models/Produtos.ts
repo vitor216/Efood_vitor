@@ -1,6 +1,6 @@
 class Produtos {
   titulo: string
-  destacado: boolean
+  destacado?: string
   tipo: string
   avaliacao: number
   descricao: string
@@ -9,7 +9,7 @@ class Produtos {
 
   constructor(
     titulo: string,
-    destacado: boolean,
+    destacado: string,
     tipo: string,
     avaliacao: number,
     descricao: string,

@@ -14,7 +14,7 @@ const produto: Produtos[] = [
   {
     titulo: 'Hioki Sushi ',
     avaliacao: 4.9,
-    destacado: true,
+    destacado: 'destaque da semana',
     tipo: 'Japonesa',
     descricao:
       'Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente o Japão sem sair do lar com nosso delivery!',
@@ -24,7 +24,6 @@ const produto: Produtos[] = [
   {
     titulo: 'La Dolce Vita Trattoria',
     avaliacao: 4.6,
-    destacado: false,
     tipo: 'Italiana',
     descricao:
       'A La Dolce Vita Trattoria leva a autêntica cozinha italiana até você! Desfrute de massas caseiras, pizzas deliciosas e risotos incríveis, tudo no conforto do seu lar. Entrega rápida, pratos bem embalados e sabor inesquecível. Peça já!',
@@ -34,7 +33,6 @@ const produto: Produtos[] = [
   {
     titulo: 'Oro Bianco',
     avaliacao: 5.0,
-    destacado: false,
     tipo: 'Espanhola',
     descricao:
       'Peça já o melhor da culinária Espanhola no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária Espanhola sem sair do lar com nosso delivery!',
@@ -44,7 +42,6 @@ const produto: Produtos[] = [
   {
     titulo: 'Silversmiths Restaurant',
     avaliacao: 4.3,
-    destacado: false,
     tipo: 'Inglesa',
     descricao:
       'Peça já o melhor da culinária inglesa no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária inglesa sem sair do lar com nosso delivery!',
@@ -54,7 +51,6 @@ const produto: Produtos[] = [
   {
     titulo: 'Le Gabriel',
     avaliacao: 5.0,
-    destacado: false,
     tipo: 'Francesa',
     descricao:
       'Peça já o melhor da culinária Francesa no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária Francesa sem sair do lar com nosso delivery!',
@@ -64,7 +60,6 @@ const produto: Produtos[] = [
   {
     titulo: 'Arca Amsterdam',
     avaliacao: 4.2,
-    destacado: false,
     tipo: 'Holandesa',
     descricao:
       'Peça já o melhor da culinária Holandesa no conforto da sua casa! deliciosos pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente a culinária Holandesa sem sair do lar com nosso delivery!',
