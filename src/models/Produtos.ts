@@ -1,6 +1,6 @@
 class Produtos {
   titulo: string
-  destacado?: string
+  destacado?: string | undefined
   tipo: string
   avaliacao: number
   descricao: string

@@ -15,7 +15,7 @@ const Listagem = ({ produtos }: Props) => (
             key={produto.id}
             titulo={produto.titulo}
             avaliacao={produto.avaliacao}
-            destacado={produto.destacado}
+            destacado={produto?.destacado}
             tipo={produto.tipo}
             descricao={produto.descricao}
             capa={produto.capa}
