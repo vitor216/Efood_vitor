@@ -19,33 +19,41 @@ const Produto = ({
   tipo,
   descricao,
   capa
-}: Props) => (
-  <S.Card>
-    <S.img src={capa} alt={titulo} />
-    <S.Container>
-      <S.Infos>
-        {destacado && <Tag>{destacado}</Tag>}
-        <Tag>{tipo}</Tag>
-      </S.Infos>
-      <S.Titulo>{titulo}</S.Titulo>
-      <S.Infos2>
-        <Nota>{avaliacao}</Nota>
-      </S.Infos2>
-      <S.Campo>
-        <S.Texto>{descricao}</S.Texto>
-      </S.Campo>
-      <S.Botao>
-        <Button
-          variant="primary"
-          type="button"
-          title="clique aqui para saber mais"
-          size="small"
-        >
-          Saiba Mais
-        </Button>
-      </S.Botao>
-    </S.Container>
-  </S.Card>
-)
+}: Props) => {
+  const getDescricao = (descricao: string) => {
+    if (descricao.length > 150) {
+      return descricao.slice(0, 147) + '...'
+    }
+  }
+
+  return (
+    <S.Card>
+      <S.img src={capa} alt={titulo} />
+      <S.Container>
+        <S.Infos>
+          {destacado ? <Tag>Destaque da Semana</Tag> : null}
+          <Tag>{tipo}</Tag>
+        </S.Infos>
+        <S.Titulo>{titulo}</S.Titulo>
+        <S.Infos2>
+          <Nota>{avaliacao}</Nota>
+        </S.Infos2>
+        <S.Campo>
+          <S.Texto>{getDescricao(descricao)}</S.Texto>
+        </S.Campo>
+        <S.Botao>
+          <Button
+            variant="primary"
+            type="button"
+            title="clique aqui para saber mais"
+            size="small"
+          >
+            Saiba Mais
+          </Button>
+        </S.Botao>
+      </S.Container>
+    </S.Card>
+  )
+}
 
 export default Produto

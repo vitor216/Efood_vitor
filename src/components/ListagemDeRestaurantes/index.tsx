@@ -1,12 +1,12 @@
-import Produtos from '../../models/Produtos'
+import { Restaurante } from '../../Pages/Home'
 import Produto from '../Produto'
 import * as S from './styles'
 
 export type Props = {
-  produtos: Produtos[]
+  produtos: Restaurante[]
 }
 
-const Listagem = ({ produtos }: Props) => (
+const ListagemDeRestaurantes = ({ produtos }: Props) => (
   <S.Container>
     <div className="container">
       <S.List>
@@ -26,4 +26,4 @@ const Listagem = ({ produtos }: Props) => (
   </S.Container>
 )
 
-export default Listagem
+export default ListagemDeRestaurantes

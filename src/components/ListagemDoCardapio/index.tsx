@@ -1,30 +1,28 @@
-import Cardapio from '../../models/Cardapio'
-import ProdutosDoPerfil from '../Cardapio'
+import Cardapio from '../Cardapio'
+import { Pratos } from '../../Pages/Cardapio1'
 import * as S from './styles'
 
 export type Props = {
-  cardapio: Cardapio[]
+  cardapios: Pratos[]
 }
 
-const ListagemDoCardapio = ({ cardapio }: Props) => {
-  return (
-    <S.Container>
-      <div className="container">
-        <S.List>
-          {cardapio.map((cardapio) => (
-            <ProdutosDoPerfil
-              key={cardapio.id}
-              nome={cardapio.nome}
-              descricao={cardapio.descricao}
-              foto={cardapio.foto}
-              preco={cardapio.preco}
-              porcao={cardapio.porcao}
-            />
-          ))}
-        </S.List>
-      </div>
-    </S.Container>
-  )
-}
+const ListagemDoCardapio = ({ cardapios }: Props) => (
+  <S.Container>
+    <div className="container">
+      <S.List>
+        {cardapios.map((cardapio) => (
+          <Cardapio
+            key={cardapio.id}
+            nome={cardapio.nome}
+            descricao={cardapio.descricao}
+            foto={cardapio.foto}
+            preco={cardapio.preco}
+            porcao={cardapio.porcao}
+          />
+        ))}
+      </S.List>
+    </div>
+  </S.Container>
+)
 
 export default ListagemDoCardapio
