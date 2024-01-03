@@ -11,15 +11,17 @@ const ListagemDeRestaurantes = ({ produtos }: Props) => (
     <div className="container">
       <S.List>
         {produtos.map((produto) => (
-          <Produto
-            key={produto.id}
-            titulo={produto.titulo}
-            avaliacao={produto.avaliacao}
-            destacado={produto?.destacado}
-            tipo={produto.tipo}
-            descricao={produto.descricao}
-            capa={produto.capa}
-          />
+          <li key={produto.id}>
+            <Produto
+              id={produto.id}
+              titulo={produto.titulo}
+              avaliacao={produto.avaliacao}
+              destacado={produto?.destacado}
+              tipo={produto.tipo}
+              descricao={produto.descricao}
+              capa={produto.capa}
+            />
+          </li>
         ))}
       </S.List>
     </div>

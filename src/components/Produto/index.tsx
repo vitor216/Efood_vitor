@@ -11,6 +11,7 @@ type Props = {
   tipo: string
   descricao: string
   capa: string
+  id: number
 }
 const Produto = ({
   titulo,
@@ -18,7 +19,8 @@ const Produto = ({
   destacado,
   tipo,
   descricao,
-  capa
+  capa,
+  id
 }: Props) => {
   const getDescricao = (descricao: string) => {
     if (descricao.length > 150) {
@@ -44,9 +46,10 @@ const Produto = ({
         <S.Botao>
           <Button
             variant="primary"
-            type="button"
+            type="link"
             title="clique aqui para saber mais"
             size="small"
+            to={`/cardapio/${id}`}
           >
             Saiba Mais
           </Button>
