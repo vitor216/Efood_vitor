@@ -7,11 +7,11 @@ import * as S from './styles'
 type Props = {
   nome: string
   descricao: string
-  preco: number
+  preco: number | string
   porcao: string
   foto: string
 }
-const Cardapio = ({ nome, descricao, foto, preco, porcao }: Props) => {
+const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
   const [ModalEstaAberto, setModalEstaAberto] = useState(false)
   const [ModalImage, setModalImage] = useState('')
   const getDescricao = (descricao: string) => {
@@ -25,7 +25,6 @@ const Cardapio = ({ nome, descricao, foto, preco, porcao }: Props) => {
       <S.img src={foto} alt={nome} />
       <S.Titulo>{nome}</S.Titulo>
       <S.Texto>{getDescricao(descricao)}</S.Texto>
-      {preco}
       <S.Botao>
         <Button
           variant="secondary"
@@ -55,12 +54,13 @@ const Cardapio = ({ nome, descricao, foto, preco, porcao }: Props) => {
                 <br />
                 Serve: de {porcao}
               </S.Description>
+              <S.Titulo>{preco}</S.Titulo>
               <Button
                 variant="secondary"
                 type="button"
                 title="clique aqui para adcionar ao carrinho"
               >
-                Adicionar ao Carrinho - R$ 60,90
+                Adicionar ao Carrinho - R$ {preco as string}
               </Button>
             </S.Campo>
           </S.Modall>
