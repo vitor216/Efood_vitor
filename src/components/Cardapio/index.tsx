@@ -54,7 +54,6 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
                 <br />
                 Serve: de {porcao}
               </S.Description>
-              <S.Titulo>{preco}</S.Titulo>
               <Button
                 variant="secondary"
                 type="button"
