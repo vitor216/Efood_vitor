@@ -7,7 +7,9 @@ import instagram from '../../assets/images/instagram-round-svgrepo-com (1) 1.svg
 const Footer = () => (
   <S.Container>
     <S.Campo>
-      <S.Imglogo src={logo} />
+      <a href="/">
+        <S.Imglogo src={logo} />
+      </a>
       <S.Campo2>
         <S.Imgicone src={facebook} />
         <S.Imgicone src={twitter} />

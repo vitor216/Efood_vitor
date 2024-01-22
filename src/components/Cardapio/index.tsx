@@ -55,11 +55,11 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
                 Serve: de {porcao}
               </S.Description>
               <Button
-                variant="secondary"
+                variant="terciario"
                 type="button"
                 title="clique aqui para adcionar ao carrinho"
               >
-                Adicionar ao Carrinho - R$ {preco as string}
+                {`Adicionar ao Carrinho - R$ ${preco as string}`}
               </Button>
             </S.Campo>
           </S.Modall>

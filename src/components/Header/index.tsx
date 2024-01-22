@@ -8,7 +8,9 @@ const Header = () => (
       <S.Campo>
         <S.Titulo>Restaurantes</S.Titulo>
       </S.Campo>
-      <S.img src={logo} />
+      <a href="/">
+        <S.img src={logo} />
+      </a>
       <a href="#">0 Produto(s) no Carrinho</a>
     </S.Container>
   </S.Hedaer>

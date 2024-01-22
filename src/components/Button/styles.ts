@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom'
 import { Props } from '.'
 
 export const ButtonContainer = styled.button<Props>`
-  width: ${(props) => (props.variant === 'primary' ? '82px' : '304px')};
+  width: ${(props) =>
+    props.variant === 'primary'
+      ? '82px'
+      : props.variant === 'terciario'
+        ? '220px'
+        : '304px'};
   height: 24px;
   background-color: ${(props) =>
     props.variant === 'primary' ? cores.vermelho : cores.amarelo};
