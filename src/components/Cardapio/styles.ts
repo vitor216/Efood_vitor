@@ -102,6 +102,9 @@ export const Description = styled.p`
   margin-bottom: 16px;
 `
 export const Campo = styled.div`
+  margin-top: 23px;
+`
+export const Campo1 = styled.div`
   margin-left: 24px;
-  margin-top: -26px;
+  margin-top: -99px;
 `

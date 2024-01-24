@@ -48,19 +48,18 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
           <S.Modall>
             <img src={ModalImage} />
             <S.Campo>
-              <S.Titulo2>{nome}</S.Titulo2>
-              <S.Description>
-                {descricao} <br />
-                <br />
-                Serve: de {porcao}
-              </S.Description>
-              <Button
-                variant="terciario"
-                type="button"
-                title="clique aqui para adcionar ao carrinho"
-              >
-                {`Adicionar ao Carrinho - R$ ${preco as string}`}
-              </Button>
+              <S.Campo1>
+                <S.Titulo2>{nome}</S.Titulo2>
+                <S.Description>{descricao}</S.Description>
+                <S.Description>Serve: de {porcao}</S.Description>
+                <Button
+                  variant="terciario"
+                  type="button"
+                  title="clique aqui para adcionar ao carrinho"
+                >
+                  {`Adicionar ao Carrinho - R$ ${preco as string}`}
+                </Button>
+              </S.Campo1>
             </S.Campo>
           </S.Modall>
         </S.ModalContent>
