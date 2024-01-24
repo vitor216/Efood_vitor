@@ -20,6 +20,12 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
     }
   }
 
+  const getDescricao2 = (descricao: string) => {
+    if (descricao.length > 230) {
+      return descricao.slice(0, 227) + '...'
+    }
+  }
+
   return (
     <S.Card>
       <S.img src={foto} alt={nome} />
@@ -48,9 +54,11 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
           <S.Modall>
             <img src={ModalImage} />
             <S.Campo>
-              <S.Campo1>
+              <S.Campo2>
                 <S.Titulo2>{nome}</S.Titulo2>
-                <S.Description>{descricao}</S.Description>
+              </S.Campo2>
+              <S.Campo1>
+                <S.Description>{getDescricao2(descricao)}</S.Description>
                 <S.Description>Serve: de {porcao}</S.Description>
                 <Button
                   variant="terciario"

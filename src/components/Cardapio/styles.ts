@@ -91,7 +91,6 @@ export const Titulo2 = styled.h2`
   font-weight: 900;
   line-height: 21.09px;
   color: ${cores.branca};
-  margin-bottom: 16px;
 `
 export const Description = styled.p`
   font-size: 14px;
@@ -105,6 +104,10 @@ export const Campo = styled.div`
   margin-top: 23px;
 `
 export const Campo1 = styled.div`
+  margin-top: 16px;
   margin-left: 24px;
-  margin-top: -99px;
+`
+export const Campo2 = styled.div`
+  margin-left: 24px;
+  margin-top: -121px;
 `
