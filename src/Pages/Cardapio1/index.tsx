@@ -4,6 +4,7 @@ import ListagemDoCardapio from '../../components/ListagemDoCardapio'
 import Banner from '../../components/Banners/Banner'
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
+import { useGetCardapioQuery } from '../../services/api'
 
 export type Pratos = {
   nome: string
@@ -16,27 +17,20 @@ export type Pratos = {
 
 const Perfil = () => {
   const { id } = useParams()
+  const { data: cardapio } = useGetCardapioQuery()
 
-  const [Pratos, setPratos] = useState<Pratos[]>([])
-
-  useEffect(() => {
-    fetch(`https://fake-api-tau.vercel.app/api/efood/restaurantes/${id}`)
-      .then((res) => res.json())
-      .then((res) => setPratos(res.cardapio))
-  }, [id])
-
-  if (!Pratos) {
-    return <h3>Carregando...</h3>
+  if (cardapio) {
+    return (
+      <>
+        <Header />
+        <Banner />
+        <ListagemDoCardapio cardapios={cardapio} />
+        <Footer />
+      </>
+    )
   }
 
-  return (
-    <>
-      <Header />
-      <Banner />
-      <ListagemDoCardapio cardapios={Pratos} />
-      <Footer />
-    </>
-  )
+  return <h3>Carregando...</h3>
 }
 
 export default Perfil
