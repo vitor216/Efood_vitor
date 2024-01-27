@@ -3,11 +3,12 @@ import Fechar from '../../assets/images/close.png'
 import { useState } from 'react'
 
 import * as S from './styles'
+import { formataPreco } from '../ListagemDoCardapio'
 
 type Props = {
   nome: string
   descricao: string
-  preco: number | string
+  preco: number
   porcao: string
   foto: string
 }
@@ -61,11 +62,11 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
                 <S.Description>{getDescricao2(descricao)}</S.Description>
                 <S.Description>Serve: de {porcao}</S.Description>
                 <Button
-                  variant="terciario"
+                  variant="secondary"
                   type="button"
                   title="clique aqui para adcionar ao carrinho"
                 >
-                  {`Adicionar ao Carrinho - R$ ${preco as string}`}
+                  {`Adicionar ao Carrinho - R$ ${formataPreco(preco)}`}
                 </Button>
               </S.Campo1>
             </S.Campo>
