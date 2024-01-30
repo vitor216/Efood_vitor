@@ -10,12 +10,12 @@ const api = createApi({
     getRestaurantes: builder.query<Restaurante[], void>({
       query: () => 'restaurantes'
     }),
-    getCardapio: builder.query<Pratos[], void>({
-      query: () => 'id'
+    getPratos: builder.query<Pratos[], void>({
+      query: (id) => `restaurantes/${id}`
     })
   })
 })
 
-export const { useGetRestaurantesQuery, useGetCardapioQuery } = api
+export const { useGetRestaurantesQuery, useGetPratosQuery } = api
 
 export default api

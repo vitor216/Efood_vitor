@@ -2,9 +2,8 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import ListagemDoCardapio from '../../components/ListagemDoCardapio'
 import Banner from '../../components/Banners/Banner'
-import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { useGetCardapioQuery } from '../../services/api'
+import { useGetPratosQuery } from '../../services/api'
 
 export type Pratos = {
   nome: string
@@ -17,14 +16,14 @@ export type Pratos = {
 
 const Perfil = () => {
   const { id } = useParams()
-  const { data: cardapio } = useGetCardapioQuery()
+  const { data: Pratos } = useGetPratosQuery()
 
-  if (cardapio) {
+  if (Pratos) {
     return (
       <>
         <Header />
         <Banner />
-        <ListagemDoCardapio cardapios={cardapio} />
+        <ListagemDoCardapio cardapios={Pratos} />
         <Footer />
       </>
     )
