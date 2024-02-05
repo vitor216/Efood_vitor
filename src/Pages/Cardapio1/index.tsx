@@ -16,7 +16,7 @@ export type Pratos = {
 
 const Perfil = () => {
   const { id } = useParams()
-  const { data: Pratos } = useGetPratosQuery()
+  const { data: Pratos } = useGetPratosQuery(id)
 
   if (Pratos) {
     return (
