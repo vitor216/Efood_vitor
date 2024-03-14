@@ -16,14 +16,14 @@ export type Pratos = {
 
 const Perfil = () => {
   const { id } = useParams()
-  const { data: Pratos } = useGetPratosQuery(id!)
+  const { data } = useGetPratosQuery(id!)
 
-  if (Pratos) {
+  if (data) {
     return (
       <>
         <Header />
         <Banner />
-        <ListagemDoCardapio cardapios={Pratos} />
+        <ListagemDoCardapio cardapios={data} />
         <Footer />
       </>
     )

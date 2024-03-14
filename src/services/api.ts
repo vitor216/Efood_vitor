@@ -9,7 +9,7 @@ const api = createApi({
     getRestaurantes: builder.query<Restaurante[], void>({
       query: () => 'restaurantes'
     }),
-    getPratos: builder.query({ query: (id) => `restaurantes/${id}` })
+    getPratos: builder.query({ query: () => `Cardapio` })
   })
 })
 
