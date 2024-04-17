@@ -14,22 +14,21 @@ export type Pratos = {
   id: number
 }
 
-const Perfil = () => {
+const Cardapio = () => {
   const { id } = useParams()
-  const { data } = useGetPratosQuery(id!)
+  const { data: Pratos } = useGetPratosQuery(id!)
 
-  if (data) {
-    return (
-      <>
-        <Header />
-        <Banner />
-        <ListagemDoCardapio cardapios={data} />
-        <Footer />
-      </>
-    )
+  if (!Pratos) {
+    return <h3>Carregando...</h3>
   }
-
-  return <h3>Carregando...</h3>
+  return (
+    <>
+      <Header />
+      <Banner />
+      <ListagemDoCardapio cardapios={Pratos} />
+      <Footer />
+    </>
+  )
 }
 
-export default Perfil
+export default Cardapio

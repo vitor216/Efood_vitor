@@ -1,5 +1,5 @@
 import Cardapio from '../Cardapio'
-import { Pratos } from '../../Pages/Cardapio1'
+import { Pratos } from '../../Pages/Cardapio'
 import * as S from './styles'
 
 export type Props = {
