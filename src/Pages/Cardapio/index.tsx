@@ -25,7 +25,7 @@ const Cardapio = () => {
     <>
       <Header />
       <Banner />
-      <ListagemDoCardapio cardapios={Pratos} />
+      <ListagemDoCardapio cardapios={Pratos.cardapio} />
       <Footer />
     </>
   )
