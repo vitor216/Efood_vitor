@@ -36,3 +36,6 @@ export const Titulo = styled.h1`
   text-align: center;
   font-family: Roboto;
 `
+export const ButtonCart = styled.a`
+  cursor: pointer;
+`
