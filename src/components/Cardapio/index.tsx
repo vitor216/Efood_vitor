@@ -4,6 +4,8 @@ import { useState } from 'react'
 
 import * as S from './styles'
 import { formataPreco } from '../ListagemDoCardapio'
+import { useDispatch } from 'react-redux'
+import { add } from '../../store/reducers/cart'
 
 type Props = {
   nome: string
@@ -25,6 +27,12 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
     if (descricao.length > 230) {
       return descricao.slice(0, 227) + '...'
     }
+  }
+
+  const dispatch = useDispatch()
+
+  const addToCart = () => {
+    dispatch(add())
   }
 
   return (
@@ -65,6 +73,7 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
                   variant="secondary"
                   type="button"
                   title="clique aqui para adcionar ao carrinho"
+                  onClick={addToCart}
                 >
                   {`Adicionar ao Carrinho - R$ ${formataPreco(preco)}`}
                 </Button>
