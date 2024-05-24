@@ -6,15 +6,12 @@ import * as S from './styles'
 import { formataPreco } from '../ListagemDoCardapio'
 import { useDispatch } from 'react-redux'
 import { add } from '../../store/reducers/cart'
+import { Pratos } from '../../Pages/Cardapio'
 
 type Props = {
-  nome: string
-  descricao: string
-  preco: number
-  porcao: string
-  foto: string
+  prato: Pratos
 }
-const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
+const Cardapio = ({ prato }: Props) => {
   const [ModalEstaAberto, setModalEstaAberto] = useState(false)
   const [ModalImage, setModalImage] = useState('')
   const getDescricao = (descricao: string) => {
@@ -32,14 +29,14 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
   const dispatch = useDispatch()
 
   const addToCart = () => {
-    dispatch(add())
+    dispatch(add(prato))
   }
 
   return (
     <S.Card>
-      <S.img src={foto} alt={nome} />
-      <S.Titulo>{nome}</S.Titulo>
-      <S.Texto>{getDescricao(descricao)}</S.Texto>
+      <S.img src={prato.foto} alt={prato.nome} />
+      <S.Titulo>{prato.nome}</S.Titulo>
+      <S.Texto>{getDescricao(prato.descricao)}</S.Texto>
       <S.Botao>
         <Button
           variant="secondary"
@@ -47,7 +44,7 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
           title="clique aqui para adicionar item ao carrinho"
           onClick={() => {
             setModalEstaAberto(true)
-            setModalImage(foto)
+            setModalImage(prato.foto)
           }}
         >
           Adicinar ao Carrinho
@@ -64,18 +61,18 @@ const Cardapio = ({ nome, descricao, preco, foto, porcao }: Props) => {
             <img src={ModalImage} />
             <S.Campo>
               <S.Campo2>
-                <S.Titulo2>{nome}</S.Titulo2>
+                <S.Titulo2>{prato.nome}</S.Titulo2>
               </S.Campo2>
               <S.Campo1>
-                <S.Description>{getDescricao2(descricao)}</S.Description>
-                <S.Description>Serve: de {porcao}</S.Description>
+                <S.Description>{getDescricao2(prato.descricao)}</S.Description>
+                <S.Description>Serve: de {prato.porcao}</S.Description>
                 <Button
                   variant="secondary"
                   type="button"
                   title="clique aqui para adcionar ao carrinho"
                   onClick={addToCart}
                 >
-                  {`Adicionar ao Carrinho - R$ ${formataPreco(preco)}`}
+                  {`Adicionar ao Carrinho - R$ ${formataPreco(prato.preco)}`}
                 </Button>
               </S.Campo1>
             </S.Campo>
