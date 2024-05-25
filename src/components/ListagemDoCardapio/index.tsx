@@ -3,7 +3,7 @@ import { Pratos } from '../../Pages/Cardapio'
 import * as S from './styles'
 
 export type Props = {
-  cardapios: Pratos[]
+  prato: Pratos[]
 }
 
 export const formataPreco = (preco: number) => {
@@ -13,19 +13,21 @@ export const formataPreco = (preco: number) => {
   }).format(preco)
 }
 
-const ListagemDoCardapio = ({ cardapios }: Props) => {
+const ListagemDoCardapio = ({ prato }: Props) => {
   return (
     <S.Container>
       <div className="container">
         <S.List>
-          {cardapios.map((cardapio) => (
+          {prato.map((prato) => (
             <Cardapio
-              key={cardapio.id}
-              nome={cardapio.nome}
-              descricao={cardapio.descricao}
-              foto={cardapio.foto}
-              preco={cardapio.preco}
-              porcao={cardapio.porcao}
+              key={prato.id}
+              id={prato.id}
+              nome={prato.nome}
+              descricao={prato.descricao}
+              foto={prato.foto}
+              preco={prato.preco}
+              porcao={prato.porcao}
+              prato={prato}
             />
           ))}
         </S.List>

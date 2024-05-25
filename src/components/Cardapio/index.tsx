@@ -10,6 +10,12 @@ import { Pratos } from '../../Pages/Cardapio'
 
 type Props = {
   prato: Pratos
+  nome: string
+  descricao: string
+  preco: number
+  porcao: string
+  foto: string
+  id: number
 }
 const Cardapio = ({ prato }: Props) => {
   const [ModalEstaAberto, setModalEstaAberto] = useState(false)
