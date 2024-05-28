@@ -93,5 +93,22 @@ export const Produto = styled.li`
     right: 8px;
     font-family: Roboto;
     font-weight: 700;
+    cursor: pointer;
+  }
+`
+export const Qtd = styled.input`
+  background-color: transparent;
+  border: none;
+  color: ${cores.vermelho};
+  width: 30px;
+`
+export const Qtd2 = styled.p`
+  font-weight: bold;
+  font-size: 14px;
+  color: ${cores.branca};
+  margin-bottom: 16px;
+
+  span {
+    margin-left: 200px;
   }
 `

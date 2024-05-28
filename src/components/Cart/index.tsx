@@ -1,13 +1,13 @@
 import Button from '../Button'
-import pizza1 from '../../assets/images/pizza1.png'
 
 import { Overlay, CartContainer, Sidebar, Prices, Produto } from './styles'
 import { useDispatch, useSelector } from 'react-redux'
 import { RootReducer } from '../../store'
-import { close } from '../../store/reducers/cart'
+import { close, remove } from '../../store/reducers/cart'
+import { formataPreco } from '../ListagemDoCardapio'
 
 const Cart = () => {
-  const { isOpen } = useSelector((state: RootReducer) => state.cart)
+  const { isOpen, items } = useSelector((state: RootReducer) => state.cart)
 
   const dispatch = useDispatch()
 
@@ -15,38 +15,34 @@ const Cart = () => {
     dispatch(close())
   }
 
+  const getTotalPreco = () => {
+    return items.reduce((acumulador, valorAtual) => {
+      return (acumulador += valorAtual.preco)
+    }, 0)
+  }
+
+  const removeItem = (id: number) => {
+    dispatch(remove(id))
+  }
+
   return (
     <CartContainer className={isOpen ? 'is-open' : ''}>
       <Overlay onClick={closeCart} />
       <Sidebar>
         <ul>
-          <Produto>
-            <img src={pizza1} />
-            <div>
-              <h3>Pizza Marguerita</h3>
-              <p>R$ 60,90</p>
-            </div>
-            <button type="button" />
-          </Produto>
-          <Produto>
-            <img src={pizza1} />
-            <div>
-              <h3>Pizza Marguerita</h3>
-              <p>R$ 60,90</p>
-            </div>
-            <button type="button" />
-          </Produto>
-          <Produto>
-            <img src={pizza1} />
-            <div>
-              <h3>Pizza Marguerita</h3>
-              <p>R$ 60,90</p>
-            </div>
-            <button type="button" />
-          </Produto>
+          {items.map((item) => (
+            <Produto key={item.id}>
+              <img src={item.foto} alt={item.nome} />
+              <div>
+                <h3>{item.nome}</h3>
+                <p>{formataPreco(item.preco)}</p>
+              </div>
+              <button onClick={() => removeItem(item.id)} type="button" />
+            </Produto>
+          ))}
         </ul>
         <Prices>
-          Valor Total <span>R$ 182,70</span>
+          Valor Total <span>{formataPreco(getTotalPreco())}</span>
         </Prices>
         <Button
           title="clique aqui para continuar"

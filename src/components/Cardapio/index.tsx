@@ -5,7 +5,7 @@ import { useState } from 'react'
 import * as S from './styles'
 import { formataPreco } from '../ListagemDoCardapio'
 import { useDispatch } from 'react-redux'
-import { add } from '../../store/reducers/cart'
+import { add, open } from '../../store/reducers/cart'
 import { Pratos } from '../../Pages/Cardapio'
 
 type Props = {
@@ -36,6 +36,7 @@ const Cardapio = ({ prato }: Props) => {
 
   const addToCart = () => {
     dispatch(add(prato))
+    dispatch(open())
   }
 
   return (
