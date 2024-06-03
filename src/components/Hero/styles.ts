@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../styles'
 
 export const Container = styled.div`
   display: block;
@@ -17,6 +18,11 @@ export const img = styled.img`
   height: 57.5px;
   margin-left: 215px;
   margin-bottom: 133.5px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 125px;
+    margin-bottom: 88px;
+  }
 `
 export const Campo = styled.div`
   max-width: 539px;

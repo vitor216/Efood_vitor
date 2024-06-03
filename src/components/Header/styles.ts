@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { breakpoints, cores } from '../../styles'
 
 export const Hedaer = styled.header`
   width: 100%;
@@ -25,10 +25,22 @@ export const Container = styled.div`
 export const img = styled.img`
   width: 125px;
   height: 57.5px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 10px;
+  }
 `
 export const Campo = styled.div`
   max-width: 109px;
   height: 21px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-left: 60px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 10px;
+  }
 `
 export const Titulo = styled.h1`
   font-size: 18px;
@@ -38,4 +50,12 @@ export const Titulo = styled.h1`
 `
 export const ButtonCart = styled.a`
   cursor: pointer;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-right: 10px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 11px;
+  }
 `

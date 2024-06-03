@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../styles'
 
 export const Container = styled.div`
   width: 100%;
@@ -16,6 +17,10 @@ export const Imglogo = styled.img`
   width: 125px;
   height: 57.5px;
   margin-left: 170px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-left: 130px;
+  }
 `
 export const Imgicone = styled.img`
   width: 24px;
@@ -27,6 +32,10 @@ export const Campo2 = styled.div`
   height: 24px;
   margin-top: 28.5px;
   margin-left: 180px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-left: 140px;
+  }
 `
 export const Titulo = styled.h2`
   font-size: 10px;
@@ -37,4 +46,8 @@ export const Titulo = styled.h2`
   max-width: 480px;
   height: 24px;
   margin-top: 80px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-top: 25px;
+  }
 `

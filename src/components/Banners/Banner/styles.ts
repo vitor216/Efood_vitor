@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoints } from '../../../styles'
 
 export const Imagem = styled.div`
   width: 100%;
@@ -26,6 +27,14 @@ export const Container = styled.div`
   width: 1024px;
   display: block;
   position: relative;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-left: 60px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: 10px;
+  }
 `
 export const Titulo1 = styled.h2`
   font-family: Roboto;

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { cores } from '../../styles'
+import { breakpoints, cores } from '../../styles'
 
 export const Card = styled.div`
   background-color: ${cores.vermelho};
@@ -8,6 +8,10 @@ export const Card = styled.div`
 export const img = styled.img`
   width: 304px;
   height: 167px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 100%;
+  }
 }
 `
 export const Titulo = styled.h3`
@@ -34,7 +38,7 @@ export const Modal = styled.div`
   justify-content: center;
   position: fixed;
   top: 0;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 100%;
 
@@ -56,6 +60,10 @@ export const ModalContent = styled.div`
   position: relative;
   z-index: 1;
 
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 50px;
+  }
+
   header {
     display: flex;
   }
@@ -67,9 +75,17 @@ export const ModalContent = styled.div`
 `
 export const Img = styled.img`
   position: absolute;
-  left: 1000px;
+  left: 740px;
   top: 8px;
   cursor: pointer;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    left: 380px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    left: 180px;
+  }
 `
 export const Modall = styled.div`
   width: 1024px;
@@ -80,9 +96,30 @@ export const Modall = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  @media (max-width: ${breakpoints.desktop}) {
+    width: 768px;
+    margin-left: -359px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-left: -163px;
+  }
+
   img {
     width: 280px;
     height: 280px;
+
+    @media (max-width: ${breakpoints.desktop}) {
+      width: 220px;
+      height: 220px;
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+      width: 110px;
+      height: 110px;
+      margin-left: 220px;
+      margin-top: -100px;
+    }
   }
 `
 export const Titulo2 = styled.h2`
@@ -99,13 +136,34 @@ export const Description = styled.p`
   line-height: 22px;
   color: ${cores.branca};
   margin-bottom: 16px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 65%;
+  }
 `
 export const Campo = styled.div`
   margin-top: 23px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    margin-top: 100px;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    margin-top: 100px;
+    margin-left: -380px;
+  }
 `
 export const Campo1 = styled.div`
   margin-top: 16px;
   margin-left: 24px;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 65%;
+  }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    max-width: 50%;
+  }
 `
 export const Campo2 = styled.div`
   margin-left: 24px;
